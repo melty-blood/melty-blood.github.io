@@ -32,7 +32,7 @@
 <meta property="og:site_name" content="Type-Moon">
 <meta property="og:description" content="Melty-Blood Love Live">
 <meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="TypeMoon">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Type-Moon" type="application/atom+xml">
@@ -253,8 +253,8 @@
   <div class="sidebar-wrap wow fadeInRight ">
     
       <div class="sidebar-author">
-  <img data-src="/avatar/avatar.jpg" data-sizes="auto" alt="John Doe" class="lazyload">
-  <div class="sidebar-author-name">John Doe</div>
+  <img data-src="/avatar/avatar.jpg" data-sizes="auto" alt="TypeMoon" class="lazyload">
+  <div class="sidebar-author-name">TypeMoon</div>
   <div class="sidebar-description">Melty-Blood Love Live</div>
 </div>
 <div class="sidebar-state">
@@ -322,7 +322,7 @@
         <span class="icon-copyright"></span>
         2020-2024
         <span class="footer-info-sep"></span>
-        John Doe
+        TypeMoon
       </div>
       
         <div>
@@ -362,8 +362,8 @@
   <div class="sidebar-wrap">
     
       <div class="sidebar-author">
-  <img data-src="/avatar/avatar.jpg" data-sizes="auto" alt="John Doe" class="lazyload">
-  <div class="sidebar-author-name">John Doe</div>
+  <img data-src="/avatar/avatar.jpg" data-sizes="auto" alt="TypeMoon" class="lazyload">
+  <div class="sidebar-author-name">TypeMoon</div>
   <div class="sidebar-description">Melty-Blood Love Live</div>
 </div>
 <div class="sidebar-state">
@@ -457,7 +457,9 @@
 <script src="https://npm.webcache.cn/mermaid@9.4.3/dist/mermaid.min.js"></script>
 
   <script>
-    $('#header img').css({"height": "auto"})
+    if ($('#header img').attr("src") == '/images/banner.jpg') {
+      $('#header img').css({"height": "auto"})
+    }
     if (window.mermaid) {
       // https://github.com/mermaid-js/mermaid/issues/1945
       const elementCode = '.mermaid'

@@ -33,8 +33,8 @@
 <meta property="og:description" content="Hexo主题123456789101112# https:&#x2F;&#x2F;hexo.io&#x2F;themes&#x2F;https:&#x2F;&#x2F;github.com&#x2F;tangyuxian&#x2F;hexo-theme-tangyuxianhttps:&#x2F;&#x2F;github.com&#x2F;D-Sketon&#x2F;hexo-theme-reimuhttps:&#x2F;&#x2F;github.com&#x2F;ShanaMaid&#x2F;hexo-theme-shana?tab&#x3D;readme-ov">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-02-20T09:11:57.000Z">
-<meta property="article:modified_time" content="2024-02-20T09:39:01.340Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:modified_time" content="2024-02-22T02:32:27.547Z">
+<meta property="article:author" content="TypeMoon">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Type-Moon" type="application/atom+xml">
@@ -159,7 +159,7 @@
 </div>
 <header id="header">
   
-    <div style="position: absolute;top: 0;left: 0;width: 100%;height: 150%;z-index: -2;display: block;background: rgb(233,0,188)"></div>
+    <img fetchpriority="high" src="/covers/one.jpg" alt="temp">
   
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
@@ -227,7 +227,7 @@
       
         
         
-          <img data-src="https://d-sketon.top/img/backimg/bg1.jpg" data-sizes="auto" alt="Hello World" class="lazyload">
+          <img data-src="/covers/one.jpg" data-sizes="auto" alt="Hello World" class="lazyload">
         
       
       <a href="/2024/02/20/hello-world/"></a>
@@ -261,8 +261,8 @@
 </div>
 </div>
       <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
-  <img data-src="/avatar/avatar.jpg" data-sizes="auto" alt="John Doe" class="lazyload">
-  <div class="sidebar-author-name">John Doe</div>
+  <img data-src="/avatar/avatar.jpg" data-sizes="auto" alt="TypeMoon" class="lazyload">
+  <div class="sidebar-author-name">TypeMoon</div>
   <div class="sidebar-description">Melty-Blood Love Live</div>
 </div>
 <div class="sidebar-state">
@@ -335,7 +335,7 @@
         <span class="icon-copyright"></span>
         2020-2024
         <span class="footer-info-sep"></span>
-        John Doe
+        TypeMoon
       </div>
       
         <div>
@@ -380,8 +380,8 @@
 </div>
 </div>
       <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
-  <img data-src="/avatar/avatar.jpg" data-sizes="auto" alt="John Doe" class="lazyload">
-  <div class="sidebar-author-name">John Doe</div>
+  <img data-src="/avatar/avatar.jpg" data-sizes="auto" alt="TypeMoon" class="lazyload">
+  <div class="sidebar-author-name">TypeMoon</div>
   <div class="sidebar-description">Melty-Blood Love Live</div>
 </div>
 <div class="sidebar-state">
@@ -480,7 +480,9 @@
 <script src="https://npm.webcache.cn/mermaid@9.4.3/dist/mermaid.min.js"></script>
 
   <script>
-    $('#header img').css({"height": "auto"})
+    if ($('#header img').attr("src") == '/images/banner.jpg') {
+      $('#header img').css({"height": "auto"})
+    }
     if (window.mermaid) {
       // https://github.com/mermaid-js/mermaid/issues/1945
       const elementCode = '.mermaid'
